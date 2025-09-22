@@ -11,6 +11,7 @@ function isWindy(speed, unit) {
 }
 let speed = prompt("What is the wind speed?");
 let unit = prompt("In what unit? (metric or imperial)");
+unit = unit.toLowerCase().trim();
 if (isWindy(speed, unit)) {
   alert("It is windy");
 } else {
