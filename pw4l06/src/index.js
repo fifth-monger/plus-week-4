@@ -1,21 +1,21 @@
 //Challenge 1
-let current = new Date();
-console.log(current.getDate());
+let currentTime = new Date();
+console.log(currentTime);
 
 //Challenge 2
-console.log(current.getMilliseconds());
+console.log(currentTime.getMilliseconds());
 
 //Challenge 3
-console.log(current.getDay());
+console.log(currentTime.getDay());
 
 //Challenge 4
-console.log(current.getFullYear());
+console.log(currentTime.getFullYear());
 
 //Challenge 5
-console.log(current.getMonth());
+console.log(currentTime.getMonth());
 
 //Challenge 6 & 7
-function formatDate(current) {
+function formatDate(currentTime) {
   let days = [
     "Sunday",
     "Monday",
@@ -39,14 +39,15 @@ function formatDate(current) {
     "November",
     "December",
   ];
-  let day = days[current.getDay()];
-  let month = months[current.getMonth()];
-  let date = current.getDate();
-  let year = current.getFullYear();
+  let day = days[currentTime.getDay()];
+  let month = months[currentTime.getMonth()];
+  let date = currentTime.getDate();
+  let year = currentTime.getFullYear();
 
-  console.log(`Today is ${day}, ${month} ${date}, ${year}`);
+  let currentDate = `Today is ${day}, ${month} ${date}, ${year}`;
+  alert(currentDate);
 
   let formattedDate = `Today is ${day}, ${month} ${date}, ${year}`;
   return formattedDate;
 }
-console.log(formatDate(new Date()));
+console.log(formatDate(currentTime));
