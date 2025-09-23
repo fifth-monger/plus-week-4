@@ -15,7 +15,7 @@ console.log(currentTime.getFullYear());
 console.log(currentTime.getMonth());
 
 //Challenge 6 & 7
-function formatDate(currentTime) {
+function formatDate(newDate) {
   let days = [
     "Sunday",
     "Monday",
@@ -39,10 +39,10 @@ function formatDate(currentTime) {
     "November",
     "December",
   ];
-  let day = days[currentTime.getDay()];
-  let month = months[currentTime.getMonth()];
-  let date = currentTime.getDate();
-  let year = currentTime.getFullYear();
+  let day = days[newDate.getDay()];
+  let month = months[newDate.getMonth()];
+  let date = newDate.getDate();
+  let year = newDate.getFullYear();
 
   let currentDate = `Today is ${day}, ${month} ${date}, ${year}`;
   alert(currentDate);
