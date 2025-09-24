@@ -1,5 +1,4 @@
-function alertHooray(event) {
-  event.preventDefault();
+function alertHooray() {
   alert("Hooray!");
 }
 let clickMeButton = document.querySelector("#special-button");
@@ -16,8 +15,8 @@ passwordSignUp.addEventListener("submit", alertPassword);
 function alertEmailUsername(event) {
   event.preventDefault();
   let emailInput = document.querySelector("#email-input");
-  alert(`Your email is ${emailInput.value}`);
   let userNameInput = document.querySelector("#username-input");
+  alert(`Your email is ${emailInput.value}`);
   alert(`Your username is ${userNameInput.value}`);
 }
 let emailSignUp = document.querySelector("#signup-form");
